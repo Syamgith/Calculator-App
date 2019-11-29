@@ -50,7 +50,7 @@
         android:layout_weight="1"
         android:textColor="@android:color/white"
         android:text="Add"
-        android:background="d"/>
+        android:background="@drawable/btnbackground""/>
     <Button
         android:id="@+id/btnsub"
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
         android:layout_weight="1"
         android:text="Subtract"
         android:textColor="@android:color/white"
-        android:background=""/>
+        android:background="@drawable/btnbackground""/>
     <Button
         android:id="@+id/btnmult"
         android:layout_width="match_parent"
@@ -66,7 +66,7 @@
         android:layout_weight="1"
         android:textColor="@android:color/white"
         android:text="Multiply"
-        android:background="d"/>
+        android:background="@drawable/btnbackground""/>
     <Button
         android:id="@+id/btndiv"
         android:layout_width="match_parent"
@@ -74,5 +74,5 @@
         android:layout_weight="1"
         android:text="Division"
         android:textColor="@android:color/white"
-        android:background=""/>
+        android:background="@drawable/btnbackground"/>
 </LinearLayout>
