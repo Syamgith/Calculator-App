@@ -1,57 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#11000000"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="182dp" />
+        android:id="@+id/texthome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Calculator"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:fontFamily="casual"
+        android:gravity="center"
+        />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="182dp" />
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Enter number" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="298dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="374dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="441dp" />
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="Enter Number" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="511dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/btnadd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:text="Add"
+        android:background="d"/>
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Subtract"
+        android:textColor="@android:color/white"
+        android:background=""/>
+    <Button
+        android:id="@+id/btnmult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:text="Multiply"
+        android:background="d"/>
+    <Button
+        android:id="@+id/btndiv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Division"
+        android:textColor="@android:color/white"
+        android:background=""/>
+</LinearLayout>
