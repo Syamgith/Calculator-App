@@ -12,36 +12,47 @@
     <TextView
         android:id="@+id/texthome"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_height="37dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
         android:text="Calculator"
         android:textColor="#000000"
         android:textSize="25dp"
-        app:fontFamily="casual"
-        android:gravity="center"
+        app:fontFamily="casual" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter number"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter number"
+            android:gravity="center"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         />
-
-    <EditText
-        android:id="@+id/num1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Enter number" />
-
-    <EditText
-        android:id="@+id/num2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="number"
-        android:text="Enter Number" />
 
     <Button
         android:id="@+id/btnadd"
@@ -50,7 +61,7 @@
         android:layout_weight="1"
         android:textColor="@android:color/white"
         android:text="Add"
-        android:background="@drawable/btnbackground""/>
+        android:background="@drawable/btnbackground"/>
     <Button
         android:id="@+id/btnsub"
         android:layout_width="match_parent"
@@ -58,7 +69,7 @@
         android:layout_weight="1"
         android:text="Subtract"
         android:textColor="@android:color/white"
-        android:background="@drawable/btnbackground""/>
+        android:background="@drawable/btnbackground"/>
     <Button
         android:id="@+id/btnmult"
         android:layout_width="match_parent"
@@ -66,13 +77,13 @@
         android:layout_weight="1"
         android:textColor="@android:color/white"
         android:text="Multiply"
-        android:background="@drawable/btnbackground""/>
+        android:background="@drawable/btnbackground"/>
     <Button
         android:id="@+id/btndiv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Division"
+        android:text="Divide"
         android:textColor="@android:color/white"
         android:background="@drawable/btnbackground"/>
 </LinearLayout>
