@@ -18,7 +18,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="Calculator"
-        android:textColor="#000000"
+        android:textColor="#2196F3"
         android:textSize="25dp"
         app:fontFamily="casual" />
     <LinearLayout
@@ -32,9 +32,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Enter number"
             android:gravity="center"
-            android:inputType="number" />
+            android:hint="Enter number"
+            android:inputType="number"
+            android:textColor="#2196F3"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/num2"
@@ -42,9 +44,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Enter number"
             android:gravity="center"
-            android:inputType="number" />
+            android:hint="Enter number"
+            android:inputType="number"
+            android:textColor="#2196F3"
+            android:textSize="24sp" />
 
     </LinearLayout>
 
@@ -53,7 +57,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        />
+        android:gravity="center"
+        android:textColor="#F44336"
+        android:textSize="36sp" />
 
     <Button
         android:id="@+id/btnadd"
@@ -62,7 +68,7 @@
         android:layout_weight="1"
         android:textColor="@android:color/white"
         android:text="Add"
-        android:background="@drawable/btnbackground"/>
+        android:background="@drawable/btngray"/>
     <Button
         android:id="@+id/btnsub"
         android:layout_width="match_parent"
@@ -70,7 +76,7 @@
         android:layout_weight="1"
         android:text="Subtract"
         android:textColor="@android:color/white"
-        android:background="@drawable/btnbackground"/>
+        android:background="@drawable/btngray"/>
     <Button
         android:id="@+id/btnmult"
         android:layout_width="match_parent"
@@ -78,7 +84,7 @@
         android:layout_weight="1"
         android:textColor="@android:color/white"
         android:text="Multiply"
-        android:background="@drawable/btnbackground"/>
+        android:background="@drawable/btngray"/>
     <Button
         android:id="@+id/btndiv"
         android:layout_width="match_parent"
@@ -86,5 +92,5 @@
         android:layout_weight="1"
         android:text="Divide"
         android:textColor="@android:color/white"
-        android:background="@drawable/btnbackground"/>
+        android:background="@drawable/btngray"/>
 </LinearLayout>
