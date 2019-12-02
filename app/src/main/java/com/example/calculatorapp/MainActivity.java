@@ -33,8 +33,7 @@ public class MainActivity extends AppCompatActivity {
         tvresult = (TextView) findViewById(R.id.tvresult);
 
 
-
-
+        //Add function
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,6 +43,37 @@ public class MainActivity extends AppCompatActivity {
                 tvresult.setText(Double.toString(result));
             }
         });
+        //Subtraction function
+        btnsub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    number1 = Double.parseDouble(num1.getText().toString());
+                    number2 = Double.parseDouble(num2.getText().toString());
+                    result = number1 - number2;
+                    tvresult.setText(Double.toString(result));
+            }
+        });
 
+        //Multiplication function
+        btnmult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                number1 = Double.parseDouble(num1.getText().toString());
+                number2 = Double.parseDouble(num2.getText().toString());
+                result = number1 * number2;
+                tvresult.setText(Double.toString(result));
+            }
+        });
+
+        //Division function
+        btndiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                number1 = Double.parseDouble(num1.getText().toString());
+                number2 = Double.parseDouble(num2.getText().toString());
+                result = number1 / number2;
+                tvresult.setText(Double.toString(result));
+            }
+        });
     }
 }

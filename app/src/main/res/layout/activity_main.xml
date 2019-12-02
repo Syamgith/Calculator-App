@@ -11,16 +11,19 @@
 
     <TextView
         android:id="@+id/texthome"
-        android:layout_width="match_parent"
+        android:layout_width="557dp"
         android:layout_height="37dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_weight="1"
+        android:background="#C8000000"
         android:gravity="center"
         android:text="Calculator"
-        android:textColor="#2196F3"
-        android:textSize="25dp"
-        app:fontFamily="casual" />
+        android:textColor="#FDFBFB"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-smallcaps" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -31,24 +34,30 @@
             android:layout_width="250dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FFFFFF"
             android:ems="10"
             android:gravity="center"
             android:hint="Enter number"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:textColor="#2196F3"
-            android:textSize="24sp" />
+            android:textColorHint="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/num2"
             android:layout_width="275dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FFFF"
             android:ems="10"
             android:gravity="center"
             android:hint="Enter number"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:textColor="#2196F3"
-            android:textSize="24sp" />
+            android:textColorHint="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -57,6 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="#B1E0FF"
         android:gravity="center"
         android:textColor="#F44336"
         android:textSize="36sp" />
@@ -66,31 +76,38 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:textColor="@android:color/white"
+        android:background="@drawable/btngray"
         android:text="Add"
-        android:background="@drawable/btngray"/>
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/btnsub"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="@drawable/btngray"
         android:text="Subtract"
         android:textColor="@android:color/white"
-        android:background="@drawable/btngray"/>
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/btnmult"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:textColor="@android:color/white"
+        android:background="@drawable/btngray"
         android:text="Multiply"
-        android:background="@drawable/btngray"/>
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/btndiv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="@drawable/btngray"
         android:text="Divide"
         android:textColor="@android:color/white"
-        android:background="@drawable/btngray"/>
+        android:textStyle="bold" />
 </LinearLayout>
