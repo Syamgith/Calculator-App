@@ -37,20 +37,39 @@ public class MainActivity extends AppCompatActivity {
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (num1.getText().length()>0 && num2.getText().length()>0){
                 number1 = Double.parseDouble(num1.getText().toString());
                 number2 = Double.parseDouble(num2.getText().toString());
                 result = number1 + number2;
                 tvresult.setText(Double.toString(result));
             }
+            else
+                if(num1.getText().length()==0){
+                num1.setError("Enter number 1");
+                }
+                if(num2.getText().length()==0){
+                    num2.setError("Enter number 2");
+                }
+            }
+
         });
         //Subtraction function
         btnsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (num1.getText().length()>0 && num2.getText().length()>0){
                     number1 = Double.parseDouble(num1.getText().toString());
                     number2 = Double.parseDouble(num2.getText().toString());
                     result = number1 - number2;
                     tvresult.setText(Double.toString(result));
+            }
+                else
+                if(num1.getText().length()==0){
+                    num1.setError("Enter number 1");
+                }
+                if(num2.getText().length()==0){
+                    num2.setError("Enter number 2");
+                }
             }
         });
 
@@ -58,10 +77,17 @@ public class MainActivity extends AppCompatActivity {
         btnmult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                number1 = Double.parseDouble(num1.getText().toString());
-                number2 = Double.parseDouble(num2.getText().toString());
-                result = number1 * number2;
-                tvresult.setText(Double.toString(result));
+                if (num1.getText().length() > 0 && num2.getText().length() > 0) {
+                    number1 = Double.parseDouble(num1.getText().toString());
+                    number2 = Double.parseDouble(num2.getText().toString());
+                    result = number1 * number2;
+                    tvresult.setText(Double.toString(result));
+                } else if (num1.getText().length() == 0) {
+                    num1.setError("Enter number 1");
+                }
+                if (num2.getText().length() == 0) {
+                    num2.setError("Enter number 2");
+                }
             }
         });
 
@@ -69,10 +95,19 @@ public class MainActivity extends AppCompatActivity {
         btndiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (num1.getText().length()>0 && num2.getText().length()>0){
                 number1 = Double.parseDouble(num1.getText().toString());
                 number2 = Double.parseDouble(num2.getText().toString());
                 result = number1 / number2;
                 tvresult.setText(Double.toString(result));
+            }
+                else
+                if(num1.getText().length()==0){
+                    num1.setError("Enter number 1");
+                }
+                if(num2.getText().length()==0) {
+                    num2.setError("Enter number 2");
+                }
             }
         });
     }
