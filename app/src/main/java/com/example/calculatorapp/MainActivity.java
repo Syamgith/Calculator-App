@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 number1 = Double.parseDouble(num1.getText().toString());
                 number2 = Double.parseDouble(num2.getText().toString());
                 result = number1 + number2;
-                tvresult.setText(Double.toString(result));
+                tvresult.setText("= "+result);
             }
             else
                 if(num1.getText().length()==0){
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     number1 = Double.parseDouble(num1.getText().toString());
                     number2 = Double.parseDouble(num2.getText().toString());
                     result = number1 - number2;
-                    tvresult.setText(Double.toString(result));
+                    tvresult.setText("= " + result);
             }
                 else
                 if(num1.getText().length()==0){
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     number1 = Double.parseDouble(num1.getText().toString());
                     number2 = Double.parseDouble(num2.getText().toString());
                     result = number1 * number2;
-                    tvresult.setText(Double.toString(result));
+                    tvresult.setText("= "+result);
                 } else if (num1.getText().length() == 0) {
                     num1.setError("Enter number 1");
                 }
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 number1 = Double.parseDouble(num1.getText().toString());
                 number2 = Double.parseDouble(num2.getText().toString());
                 result = number1 / number2;
-                tvresult.setText(Double.toString(result));
+                tvresult.setText("= "+result);
             }
                 else
                 if(num1.getText().length()==0){
