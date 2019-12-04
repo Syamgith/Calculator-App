@@ -8,25 +8,25 @@ Hi!. This a simple caculator app. It is an **Android application**. This app per
 
 
 ## SCREENSHOTS
-![Cal_SS_1]()
+![Cal_SS_1](Screenshots/Cal_SS_1.jpg)
 
 
 
 ## Addition
 
-![Cal_SS_2]()
+![Cal_SS_2](Screenshots/Cal_SS_2.jpg)
 
 
 
 
 ## Subtration
-![Cal_SS_3]()
+![Cal_SS_3](Screenshots/Cal_SS_3.jpg)
 
 
 
 ## **Multiplication**
-![Cal_SS_4]()
+![Cal_SS_4](Screenshots/Cal_SS_4.jpg)
 
 ## **Division**
-![Cal_SS_5]()
+![Cal_SS_5](Screenshots/Cal_SS_5.jpg)
 
