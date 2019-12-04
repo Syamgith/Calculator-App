@@ -16,7 +16,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_weight="1"
-        android:background="#2196F3"
+        android:background="#03A9F4"
         android:gravity="center"
         android:text="Calculator"
         android:textColor="#FDFBFB"
@@ -44,9 +44,19 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/signid"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:textColor="#3397F1"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/num2"
-            android:layout_width="275dp"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#FFFF"
@@ -68,7 +78,7 @@
         android:layout_weight="1"
         android:background="#BEE4FF"
         android:gravity="center"
-        android:textColor="#F44336"
+        android:textColor="#3397F1"
         android:textSize="36sp"
         android:textStyle="bold" />
 

@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnadd, btnsub, btnmult, btndiv ;
     EditText num1,num2;
-    TextView tvresult;
+    TextView tvresult,sign;
     double number1, number2, result;
 
     @Override
@@ -31,12 +31,13 @@ public class MainActivity extends AppCompatActivity {
         num2 = (EditText)findViewById(R.id.num2);
 
         tvresult = (TextView) findViewById(R.id.tvresult);
-
+        sign = (TextView) findViewById(R.id.signid);
 
         //Add function
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sign.setText("+");
                 if (num1.getText().length()>0 && num2.getText().length()>0){
                 number1 = Double.parseDouble(num1.getText().toString());
                 number2 = Double.parseDouble(num2.getText().toString());
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         btnsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sign.setText("-");
                 if (num1.getText().length()>0 && num2.getText().length()>0){
                     number1 = Double.parseDouble(num1.getText().toString());
                     number2 = Double.parseDouble(num2.getText().toString());
@@ -77,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         btnmult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sign.setText("x");
                 if (num1.getText().length() > 0 && num2.getText().length() > 0) {
                     number1 = Double.parseDouble(num1.getText().toString());
                     number2 = Double.parseDouble(num2.getText().toString());
@@ -95,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
         btndiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sign.setText("/");
                 if (num1.getText().length()>0 && num2.getText().length()>0){
                 number1 = Double.parseDouble(num1.getText().toString());
                 number2 = Double.parseDouble(num2.getText().toString());
