@@ -16,7 +16,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_weight="1"
-        android:background="#C8000000"
+        android:background="#2196F3"
         android:gravity="center"
         android:text="Calculator"
         android:textColor="#FDFBFB"
@@ -66,19 +66,22 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#B1E0FF"
+        android:background="#BEE4FF"
         android:gravity="center"
         android:textColor="#F44336"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnadd"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/btngray"
-        android:text="Add"
-        android:textColor="@android:color/white"
+        android:background="@drawable/btnnew"
+        android:text="ADD"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <Button
@@ -86,9 +89,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/btngray"
+        android:background="@drawable/btnnew"
         android:text="Subtract"
         android:textColor="@android:color/white"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <Button
@@ -96,9 +100,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/btngray"
+        android:background="@drawable/btnnew"
         android:text="Multiply"
         android:textColor="@android:color/white"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <Button
@@ -106,8 +111,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/btngray"
+        android:background="@drawable/btnnew"
         android:text="Divide"
         android:textColor="@android:color/white"
+        android:textSize="18sp"
         android:textStyle="bold" />
 </LinearLayout>
