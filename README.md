@@ -1,6 +1,6 @@
 # Calculator App
 
-Hi!. This a simple caculator app. It is an **Android application**. This app performs **addition, subtration, division, multiplcation** operations in integers and decimal numbers.
+This a simple **Caculator App**. It is an **Android application**. This app performs **addition, subtration, division, multiplcation** operations in integers and decimal numbers.
 
 **Language used - Java**
 **IDE - Android Studio**
